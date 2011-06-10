@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/sjuge/projects/vidal-desktop/jrowl/src/main'
-let g:netrw_dirhist_2='/home/sjuge/projects/vidal-desktop/jrowl/src/main/resources'
-let g:netrw_dirhist_3='/home/sjuge/projects/vidal-desktop/jrowl/src/main/resources/images'
-let g:netrw_dirhist_4='/home/sjuge/projects/vidal-desktop/control-center-app'
