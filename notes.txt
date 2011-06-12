@@ -1,0 +1,92 @@
+
+This file contains all things i've learned and those that I still need to
+
+=== TODOs ===
+
+TODO : disable search on F1, but put ":help " in command buffer to search for a subject
+
+TODO : remap Ctrl+V Ctrl+C Ctrl+X Ctrl+Z to their original mapping (see mswin.vim )
+TODO : search how to use buffers 
+TODO : display marks in buffers 
+TODO : macro recording and usage ??? 
+
+=== Windows ===
+
+Ctrl+w
+o : only current window
+s : split horizontally
+s : split horizontally
+h,j,k,l : move cursor to window
+Ctrl+w : switch to next window
+
+
+
+
+
+
+TODO : remap Ctrl+V Ctrl+C Ctrl+X Ctrl+Z to their original mapping (see mswin.vim )
+TODO : search how to use buffers 
+TODO : display marks in buffers -> sounds like it is not possible (according to help)
+
+ "find how to use folds
+ " zf + motion to fold manually an item
+ " {Visual}zf to fold selection
+ " zo to delete current fold
+
+ move in current line : 
+ move to first non blank character in row : g^ or ^
+ move to last non bkank character in row : g_
+
+ " => TODO : find how to manipulate xml tags
+ "  -> nothing more than cit, cat, dit, dat, ... => find a plugin for xml
+
+ " macro recording and usage
+ " q[register] records typed characters to register (q by default)
+ " @[register] execute content of register
+ " @@ re-execute last macro
+
+ " TODO : try to find an example of macro execution combined with g command
+
+  " g command
+  " file type ( auto detect and set manually)
+  " search highlight
+  " 'hl' variable defines all search highlight types
+  " :nohlsearch disables current highlight
+
+  " TODO messages encoding 
+
+  " TODO display line numbers
+  " -> TODO customize status line to include current cursor position
+  " laststatus controls when a status line is displayed
+  " see statusline option
+
+  " TODO : fullscreen display
+
+
+" --- help ---
+
+" search help
+" helpg {pattern}
+" -> then navigate results using quickfix window through :cwindow and :cnext
+
+" --- command line ---
+
+" <Up> search cmd history with current cmd as prefix
+
+" Ctrl+R : insert value of a register into command line
+" named registers (not exhaustive)
+"  %  current file name
+"  *  clipboard content
+"  /  last search pattern
+"  :  last command line
+
+" auto-completion
+" Ctrl+D : list names that match the pattern in front of the cursor
+
+" --- windows ---
+" Ctrl+w, x where x is 
+" H,J,K,L : move current window to direction
+" h,j,k,l : move to window left, below, up, right current window
+
+" jumps
+" '' : return to previous position after a jump (like a search, go to start/end of file, ...)
