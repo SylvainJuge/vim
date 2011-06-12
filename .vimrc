@@ -43,11 +43,11 @@ set backspace=eol,start,indent
 " GUI font
 if has("gui_running")
     if has("gui_gtk2")
-  " TODO find appropriate font for gtk2
-        ":set guifont=Luxi\ Mono\ 12
+        " TODO find appropriate font for gtk2
+        "set guifont=Luxi\ Mono\ 12
     elseif has("gui_win32")
-  " TODO : find appropriate font for windows xp
-        :set guifont=Consolas 
+        " TODO : find appropriate font for windows xp
+        set guifont=Consolas:h11
     endif
 endif
 
@@ -57,7 +57,7 @@ set guioptions-=T
 " remove menus
 set guioptions-=m
 set guioptions-=g
-" remove left scrollbar
+" remove all scrollbars
 set guioptions-=R
 set guioptions-=r
 set guioptions-=L
