@@ -1,0 +1,18 @@
+this repository contains my vim settings
+
+on windows, assuming that repo have been cloned to ~/.vim folder, 
+you have to create a ~/_vimrc as follows :
+
+set runtimepath^=~/.vim/.vim
+source ~/.vim/.vimrc
+
+on linux, assuming that repo have been cloned to .vim-git (thus avoids conflictswith any .vim folder)
+
+1) use symbolic links
+~/.vimrc -> ~/.vim-git/.vimrc
+~/.vim -> ~/.vim-git/.vim
+
+2) use a ~/.vimrc that makes indirection as on windows
+
+set runtimepath^=~/.vim-git/.vim
+source ~/.vim-git/.vimrc
