@@ -1,9 +1,16 @@
+" most intersting stuff is done through breaking things
+set nocompatible
+
+" pathogen plugin, requires filetype plugin indent
+filetype plugin indent on
+call pathogen#infect()
 
 " set language for messages and gui menus
-language messages en
+" TODO : make linux-friendly
+let s:langCode = has('win32') ? 'en' : 'en'
 
 " must be set before syntax highlight
-set langmenu=en
+set langmenu=s:langCode
 
 colorscheme ir_black
 
@@ -41,16 +48,13 @@ noremap <F2> :NERDTreeToggle<CR>
 set backspace=eol,start,indent
 
 " GUI font
-if has("gui_running")
-    if has("gui_gtk2")
-        " TODO find appropriate font for gtk2
-        "set guifont=Luxi\ Mono\ 12
-    elseif has("gui_win32")
-        " TODO : find appropriate font for windows xp
-        set guifont=Consolas:h11
-    endif
+if has("gui_gtk2")
+    " TODO find appropriate font for gtk2
+    "set guifont=Luxi\ Mono\ 12
+elseif has("gui_win32")
+    " TODO : find appropriate font for windows xp
+    set guifont=Consolas:h10
 endif
-
 
 " remove gui icons bar
 set guioptions-=T
@@ -62,3 +66,14 @@ set guioptions-=R
 set guioptions-=r
 set guioptions-=L
 set guioptions-=l
+
+
+" don't redraw while executing macros
+set lazyredraw
+
+" display current mode
+"set showmode
+
+" allow to have hidden buffers not written
+set hidden
+

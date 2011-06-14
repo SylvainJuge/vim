@@ -2,15 +2,15 @@
 This file contains all things i've learned and those that I still need to
 
 === TODOs ===
+TODO : find/create a plugin that enable to have per-project configurations
+    http://stackoverflow.com/questions/456792/vim-apply-settings-on-files-in-directory
 
 TODO : disable search on F1, but put ":help " in command buffer to search for a subject
 
 TODO : remap Ctrl+V Ctrl+C Ctrl+X Ctrl+Z to their original mapping (see mswin.vim )
-TODO : macro recording and usage ??? 
-
-TODO : remap Ctrl+V Ctrl+C Ctrl+X Ctrl+Z to their original mapping (see mswin.vim )
 
 TODO : search how to use buffers batch operations (bufdo)
+
 TODO : display marks in buffers 
     -> sounds like it is not possible (according to help)
 
