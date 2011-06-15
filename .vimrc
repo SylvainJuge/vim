@@ -6,8 +6,7 @@ filetype plugin indent on
 call pathogen#infect()
 
 " set language for messages and gui menus
-" TODO : make linux-friendly
-let s:langCode = has('win32') ? 'en' : 'en'
+let s:langCode = has('win32') ? 'en' : 'en_US.UTF-8'
 
 " must be set before syntax highlight
 set langmenu=s:langCode
