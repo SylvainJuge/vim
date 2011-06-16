@@ -4,9 +4,3 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/bundles/surround"]
-	path = .vim/bundles/surround
-	url = https://github.com/tpope/vim-surround.git
-[submodule ".vim/bundles/repeat"]
-	path = .vim/bundles/repeat
-	url = https://github.com/tpope/vim-repeat.git
