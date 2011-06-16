@@ -9,7 +9,8 @@ call pathogen#infect()
 let s:langCode = has('win32') ? 'en' : 'en_US.UTF-8'
 
 " must be set before syntax highlight
-set langmenu=s:langCode
+let &langmenu = s:langCode
+execute 'language message '.s:langCode
 
 colorscheme ir_black
 
