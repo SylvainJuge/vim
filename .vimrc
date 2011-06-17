@@ -80,3 +80,5 @@ set lazyredraw
 " allow to have hidden buffers not written
 set hidden
 
+set laststatus=2
+set statusline=%t\ %{fugitive#statusline()}\ [%l,%v]\ %=%{strftime(\"%H:%M\")}
