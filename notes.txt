@@ -2,6 +2,10 @@
 This file contains all things i've learned and those that I still need to
 
 === TODOs ===
+
+TODO : custom keyboard mappings
+    create a map that shows all possiblitiles (should be a nice graph/visu project)
+
 TODO : find/create a plugin that enable to have per-project configurations
     http://stackoverflow.com/questions/456792/vim-apply-settings-on-files-in-directory
 
@@ -19,10 +23,41 @@ TODO : find how to manipulate xml tags
 
 TODO search highlight
     'hl' variable defines all search highlight types
-    :nohlsearch disables current highlight
+    :[no]hlsearch disables current highlight
 
-switch between buffers
-    Ctrl+^ : switch with alternate file
+TOOD status line 
+    - how to trigger update when needed ( without user moving cursor )
+
+TODO text formatting
+    right center and left commands 
+    look at fmt command line tool
+
+TODO truncate long lines
+    wrapmargin
+
+TODO open search in rigt window instead of top half window
+    this mapping does open a new in a separate tab : "noremap <F1> :tabnew<CR>:help<CR><C-W>o"
+    issue: must reuse current help window if already available 
+
+TODO multiple configurations
+        - using a local file that .vimrc uses to detect which parameters should be used
+
+TODO fullscreen display
+
+=== Keyboard Mappings ===
+
+add <silent> : avoids command to be printed in command line after its execution
+add <unique> : avoids to override an already defined mapping
+add <expr> : string is an expression and have to be evaluated (ex: function calls)
+Note: not all features are available within function, but returning characters allow to execute stuff after return
+
+=== NerdTree ===
+
+I : show/hide hidden files
+o : expand folder/ open item
+O : expand folder and children
+t : open in new tab
+T : open in background tab
 
 === Motion ===
 
@@ -33,7 +68,14 @@ move in current line :
 g^ or ^ : first non blank character
 g_ : last non bkank character
 
+=== Visual Mode ===
+
+gv : retrieve previous visual selection
+operators :
+    ~ : switch case ( also works for current character in normal mode )`:w
+
 === Buffers ===
+Ctrl+^ : switch with alternate buffer
 
 === Windows ===
 
@@ -56,19 +98,12 @@ q[register] : records typed characters to register (q by default)
 @[register] : execute content of register
 @@ : re-execute last macro
 
- " TODO : try to find an example of macro execution combined with g command
+=== jumps ===
 
-  " g command
-  " file type ( auto detect and set manually)
-
-  " TODO messages encoding 
-
-  " TODO display line numbers
-  " -> TODO customize status line to include current cursor position
-  " laststatus controls when a status line is displayed
-  " see statusline option
-
-  " TODO : fullscreen display
+:jumps for list
+Ctrl+O : move to previous jump
+Ctrl+I : move to next jump
+'' : return to previous position after a jump (like a search, go to start/end of file, ...)
 
 === help ===
 
@@ -88,6 +123,3 @@ q[register] : records typed characters to register (q by default)
 
 " auto-completion
 " Ctrl+D : list names that match the pattern in front of the cursor
-
-" jumps
-" '' : return to previous position after a jump (like a search, go to start/end of file, ...)
