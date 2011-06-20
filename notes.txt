@@ -21,6 +21,9 @@ TODO search highlight
     'hl' variable defines all search highlight types
     :nohlsearch disables current highlight
 
+switch between buffers
+    Ctrl+^ : switch with alternate file
+
 === Motion ===
 
 hjkl
