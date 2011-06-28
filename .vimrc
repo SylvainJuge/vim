@@ -44,7 +44,7 @@ set shiftwidth=4
 set autoindent
 
 " map nerdtree to F2
-noremap <F2> :NERDTreeToggle<CR>
+noremap <silent> <F2> :NERDTreeToggle<CR>
 
 " backspace in insert mode : backspace option 
 " behave like normal text editor, backspace always delete previous character 
