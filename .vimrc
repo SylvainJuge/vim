@@ -82,3 +82,7 @@ set hidden
 
 set laststatus=2
 set statusline=%t\ %{fugitive#statusline()}\ [%l,%v]\ %=%{strftime(\"%H:%M\")}
+
+" extra locations required for swap files. will use 1st usable, so win-*nix
+" friendly. fixes issues with Gdiff on windows
+set directory+=,~/tmp,$TMP
