@@ -27,15 +27,27 @@ set fileencoding=utf-8
 " auto complete on tab
 set wildmenu
 
-" disable arrow key mappings
-noremap <Up> ""
-noremap <Down> ""
-noremap <Left> ""
-noremap <Right> ""
+" disable arrow key mappings (normal and insert modes)
+nnoremap <Up> <nop>
+nnoremap <Down> <nop>
+nnoremap <Left> <nop>
+nnoremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
+" move on screen lines (and not actual lines), useful for wrapped lines
+nnoremap j gj
+nnoremap k gk
+
+" remove useless help
+noremap <F1> <nop>
 
 " tab are replaced by 4 spaces
 set expandtab
 set tabstop=4
+" make deleting on spaces like its tabs
+set softtabstop=4
 
 " << / >> right / left shift by 4 spaces
 set shiftwidth=4
@@ -86,3 +98,18 @@ set statusline=%t\ %{fugitive#statusline()}\ [%l,%v]\ %=%{strftime(\"%H:%M\")}
 " extra locations required for swap files. will use 1st usable, so win-*nix
 " friendly. fixes issues with Gdiff on windows
 set directory+=,~/tmp,$TMP
+
+" comma as leader key
+:let mapleader = ","
+
+" search options
+set incsearch
+set showmatch
+set hlsearch
+
+" search ignore case when all lowercase, case sensitive otherwise
+set ignorecase
+set smartcase
+
+" hide search highlight when no more useful
+nnoremap <silent><leader><space> :nohlsearch<cr>

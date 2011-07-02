@@ -3,6 +3,17 @@ This file contains all things i've learned and those that I still need to
 
 === TODOs ===
 
+TODO see what wildmode does to wildmenu
+TODO vim 7.3 new features : relativenumber and undofile
+
+TODO use standard regex for search ?
+  add a \v to search pattern, see what it means for regex and refs
+  nnoremap / /\v
+  vnoremap / /\v
+
+TODO long lines and text formatting : 'wrap', 'textwidth', 'formatoptions', 'colorcolumn'
+
+
 TODO : custom keyboard mappings
     create a map that shows all possiblitiles (should be a nice graph/visu project)
 
@@ -25,7 +36,7 @@ TODO search highlight
     'hl' variable defines all search highlight types
     :[no]hlsearch disables current highlight
 
-TOOD status line 
+TODO status line 
     - how to trigger update when needed ( without user moving cursor )
 
 TODO text formatting
