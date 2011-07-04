@@ -118,3 +118,6 @@ noremap <silent><leader>n :NERDTreeToggle<cr>
 noremap <silent><leader>gs :Gstatus<cr>
 noremap <silent><leader>gd :Gdiff<cr>
 
+" ack integration
+" TODO add suitable configuration for windows
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
