@@ -55,9 +55,6 @@ set shiftwidth=4
 " copy indent from current line on <CR> 
 set autoindent
 
-" map nerdtree to F2
-noremap <silent> <F2> :NERDTreeToggle<CR>
-
 " backspace in insert mode : backspace option 
 " behave like normal text editor, backspace always delete previous character 
 set backspace=eol,start,indent
@@ -100,7 +97,7 @@ set statusline=%t\ %{fugitive#statusline()}\ [%l,%v]\ %=%{strftime(\"%H:%M\")}
 set directory+=,~/tmp,$TMP
 
 " comma as leader key
-:let mapleader = ","
+let mapleader = ","
 
 " search options
 set incsearch
@@ -111,5 +108,13 @@ set hlsearch
 set ignorecase
 set smartcase
 
-" hide search highlight when no more useful
+" hide search highlight on ,<space>
 nnoremap <silent><leader><space> :nohlsearch<cr>
+
+" map nerdtree to ,n
+noremap <silent><leader>n :NERDTreeToggle<cr>
+
+" fugitive mapped to ,g*
+noremap <silent><leader>gs :Gstatus<cr>
+noremap <silent><leader>gd :Gdiff<cr>
+
