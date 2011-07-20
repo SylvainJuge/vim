@@ -111,13 +111,18 @@ set smartcase
 " hide search highlight on ,<space>
 nnoremap <silent><leader><space> :nohlsearch<cr>
 
-" map nerdtree to ,n
-noremap <silent><leader>n :NERDTreeToggle<cr>
+" map nerdtree to ,f
+noremap <silent><leader>f :NERDTreeToggle<cr>
 
 " fugitive mapped to ,g*
 noremap <silent><leader>gs :Gstatus<cr>
 noremap <silent><leader>gd :Gdiff<cr>
 
+" window commands on ,w instead of Ctrl+w
+nnoremap <leader>w <c-w>
+
 " ack integration
 " TODO add suitable configuration for windows
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+
