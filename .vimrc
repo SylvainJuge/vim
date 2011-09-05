@@ -121,8 +121,10 @@ noremap <silent><leader>gd :Gdiff<cr>
 " window commands on ,w instead of Ctrl+w
 nnoremap <leader>w <c-w>
 
+" diff update on ,du
+" TODO : enable it only when in diff mode
+nnoremap <silent><leader>du :diffupdate<cr>
+
 " ack integration
 " TODO add suitable configuration for windows
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-
-
