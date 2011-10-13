@@ -1,7 +1,10 @@
 
-This file contains all things i've learned and those that I still need to
+This file contains all things I've learned and those that I still need to
 
 === TODOs ===
+" TODO : mouse integration for linux console
+
+" TODO : enable/disable spell check (with a function key??)
 
 TODO see what wildmode does to wildmenu
 TODO vim 7.3 new features : relativenumber and undofile
@@ -13,9 +16,11 @@ TODO use standard regex for search ?
 
 TODO long lines and text formatting : 'wrap', 'textwidth', 'formatoptions', 'colorcolumn'
 
+TODO : create a mapping to execute d[o|p] + move to next change for quick
+    diff apply (+bonus if it can be repeated)
 
 TODO : custom keyboard mappings
-    create a map that shows all possiblitiles (should be a nice graph/visu project)
+    create a map that shows all possibilities (should be a nice graph/visu project)
 
 TODO : find/create a plugin that enable to have per-project configurations
     http://stackoverflow.com/questions/456792/vim-apply-settings-on-files-in-directory
@@ -29,7 +34,7 @@ TODO : search how to use buffers batch operations (bufdo)
 TODO : display marks in buffers 
     -> sounds like it is not possible (according to help)
 
-TODO : find how to manipulate xml tags
+TODO : find how to manipulate XML tags
     -> nothing more than cit, cat, dit, dat, ... => find a plugin for xml
 
 TODO search highlight
@@ -46,14 +51,22 @@ TODO text formatting
 TODO truncate long lines
     wrapmargin
 
-TODO open search in rigt window instead of top half window
+TODO open search in right window instead of top half window
     this mapping does open a new in a separate tab : "noremap <F1> :tabnew<CR>:help<CR><C-W>o"
     issue: must reuse current help window if already available 
 
 TODO multiple configurations
         - using a local file that .vimrc uses to detect which parameters should be used
 
-TODO fullscreen display
+TODO full screen display, for windows and Linux
+
+TODO : see how to add highlight of end of change area
+TODO : set "shell" option to select which shell is used when calling commands from vim
+
+=== Spell Check ===
+[no]spell : enable/disable spell check
+spellang : select spell check language
+z= : prompts for suggestions
 
 === Keyboard Mappings ===
 
@@ -75,17 +88,37 @@ T : open in background tab
 hjkl
 {,}: previous/next paragraph
 
-move in current line : 
+Move in current line : 
 g^ or ^ : first non blank character
-g_ : last non bkank character
+g_ : last non blank character
+
+=== Normal Mode ===
+
+g? : rot13 selection !!!
+
+Ctrl-A : increment numeric value under cursor
+Ctrl-X : decrement numeric value under cursor 
+    -> both do not work with alphabetic characters
 
 === Visual Mode ===
 
-gv : retrieve previous visual selection
+gv : retrieve previous visual selection (from normal mode)
 operators :
     ~ : switch case ( also works for current character in normal mode )`:w
 
+=== Insert Mode ===
+
+Ctrl-w : delete word before cursor 
+Ctrl-r{reg} : insert content of register {reg}, as if typed
+Ctrl-r Ctrl-r{reg} : insert content of register {reg} literally
+
+
+-- Auto-Completion --
+Ctrl-n : Next Keyword
+Ctrl-p : Next Keyword
+
 === Buffers ===
+
 Ctrl+^ : switch with alternate buffer
 
 === Windows ===
@@ -96,6 +129,8 @@ s : split horizontally
 s : split horizontally
 h,j,k,l : move cursor to window
 Ctrl+w : switch to next window
+Ctrl+n : create a new empty window (defaults to hsplit)
+
 
 === Folds ===
 

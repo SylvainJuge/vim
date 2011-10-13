@@ -40,8 +40,17 @@ inoremap <Right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-" remove useless help
-noremap <F1> <nop>
+" remove useless help, and prompt for search term instead
+noremap <F1> <esc>:h 
+
+" display a $ at end of change area (thus changed is visually between
+" cursor and highlighted $.
+" TODO : find how to always make it look different from text color under
+" cursor
+set cpoptions+=$
+
+" when scrolling, keep a margin for readeability
+set scrolloff=4
 
 " tab are replaced by 4 spaces
 set expandtab
