@@ -3,6 +3,11 @@ This file contains all things I've learned and those that I still need to
 
 === TODOs ===
 " TODO : mouse integration for linux console
+    mousefocus : auto focus window under cursor
+    mousehide : hide mouse when characters are typed
+    mousemodel : set right click behavior
+        = extend : same behavior as xterm
+    TODO : mouse scrolling : scroll-mouse-wheel
 
 " TODO : enable/disable spell check (with a function key??)
 
@@ -74,6 +79,17 @@ add <silent> : avoids command to be printed in command line after its execution
 add <unique> : avoids to override an already defined mapping
 add <expr> : string is an expression and have to be evaluated (ex: function calls)
 Note: not all features are available within function, but returning characters allow to execute stuff after return
+
+=== Surround ===
+yss : surround whole line
+ySS : surround whole line and indent it
+
+ySw : surround word and indent it
+ysw : surround word
+
+- in visual mode -
+s : surround selection
+S : surround selection and indent it (if in visual-line)
 
 === NerdTree ===
 
