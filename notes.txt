@@ -30,10 +30,6 @@ TODO : custom keyboard mappings
 TODO : find/create a plugin that enable to have per-project configurations
     http://stackoverflow.com/questions/456792/vim-apply-settings-on-files-in-directory
 
-TODO : disable search on F1, but put ":help " in command buffer to search for a subject
-
-TODO : remap Ctrl+V Ctrl+C Ctrl+X Ctrl+Z to their original mapping (see mswin.vim )
-
 TODO : search how to use buffers batch operations (bufdo)
 
 TODO : display marks in buffers 
@@ -45,9 +41,6 @@ TODO : find how to manipulate XML tags
 TODO search highlight
     'hl' variable defines all search highlight types
     :[no]hlsearch disables current highlight
-
-TODO status line 
-    - how to trigger update when needed ( without user moving cursor )
 
 TODO text formatting
     right center and left commands 
@@ -74,13 +67,13 @@ spellang : select spell check language
 z= : prompts for suggestions
 
 === Keyboard Mappings ===
-
 add <silent> : avoids command to be printed in command line after its execution
 add <unique> : avoids to override an already defined mapping
 add <expr> : string is an expression and have to be evaluated (ex: function calls)
 Note: not all features are available within function, but returning characters allow to execute stuff after return
 
 === Surround ===
+
 yss : surround whole line
 ySS : surround whole line and indent it
 
@@ -112,8 +105,8 @@ g_ : last non blank character
 
 g? : rot13 selection !!!
 
-Ctrl-A : increment numeric value under cursor
-Ctrl-X : decrement numeric value under cursor 
+Ctrl-a : increment numeric value under cursor
+Ctrl-x : decrement numeric value under cursor 
     -> both do not work with alphabetic characters
 
 === Visual Mode ===
@@ -128,8 +121,10 @@ Ctrl-w : delete word before cursor
 Ctrl-r{reg} : insert content of register {reg}, as if typed
 Ctrl-r Ctrl-r{reg} : insert content of register {reg} literally
 
+Ctrl-y : insert caracter above in previous line
 
 -- Auto-Completion --
+
 Ctrl-n : Next Keyword
 Ctrl-p : Next Keyword
 
@@ -139,14 +134,13 @@ Ctrl+^ : switch with alternate buffer
 
 === Windows ===
 
-Ctrl+w + <x> where <x> is :
+Ctrl+w then <x> where <x> is :
 o : only current window
 s : split horizontally
 s : split horizontally
 h,j,k,l : move cursor to window
 Ctrl+w : switch to next window
 Ctrl+n : create a new empty window (defaults to hsplit)
-
 
 === Folds ===
 
@@ -160,28 +154,28 @@ q[register] : records typed characters to register (q by default)
 @[register] : execute content of register
 @@ : re-execute last macro
 
-=== jumps ===
+=== Jumps ===
 
 :jumps for list
 Ctrl+O : move to previous jump
 Ctrl+I : move to next jump
 '' : return to previous position after a jump (like a search, go to start/end of file, ...)
 
-=== help ===
+=== Help ===
 
 :helpg {pattern} : help grep
     -> then navigate results using quickfix window through :cwindow and :cnext
 
-=== command line mode ===
+=== Command Line mode ===
 
-" <Up> search cmd history with current cmd as prefix
+<Up> : search cmd history with current cmd as prefix
 
-" Ctrl+R : insert value of a register into command line
-" named registers (not exhaustive)
-"  %  current file name
-"  *  clipboard content
-"  /  last search pattern
-"  :  last command line
+Ctrl+r : insert value of a register into command line
+  named registers (not exhaustive)
+   %  current file name
+   *  clipboard content
+   /  last search pattern
+   :  last command line
 
-" auto-completion
-" Ctrl+D : list names that match the pattern in front of the cursor
+-- Auto-Completion --
+Ctrl+d : list names that match the pattern in front of the cursor
