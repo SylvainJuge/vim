@@ -16,6 +16,8 @@
 [submodule ".vim/bundle/fuzzyfinder"]
 	path = .vim/bundle/fuzzyfinder
 	url = https://github.com/vim-scripts/FuzzyFinder.git
+	ignore = dirty
 [submodule ".vim/bundle/l9"]
 	path = .vim/bundle/l9
 	url = https://github.com/git-mirror/vim-l9.git
+	ignore = dirty
