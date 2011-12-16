@@ -128,6 +128,26 @@ noremap <silent><leader>f :NERDTreeToggle<cr>
 noremap <silent><leader>gs :Gstatus<cr>
 noremap <silent><leader>gd :Gdiff<cr>
 
+" closes all fugitive windows in current tab
+function! GitClose()
+    let sep = has('win32') ? '\' : '/'
+    for buffer in tabpagebuflist()
+        if 0 < bufnr(buffer) 
+            let bufName = bufname(buffer)
+            if bufName =~? '^fugitive:' || bufName =~? '\.git'.sep.'index$'
+                let window = bufwinnr(buffer)
+                if 0 < window
+                    execute window."wincmd w" 
+                    wincmd c
+                    wincmd p
+                endif
+            endif
+        endif
+    endfor
+endfunction
+
+nnoremap <silent><leader>gc :call GitClose()<cr>
+
 " window commands on ,w instead of Ctrl+w
 nnoremap <leader>w <c-w>
 
