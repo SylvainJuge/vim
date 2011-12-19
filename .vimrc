@@ -121,8 +121,24 @@ set smartcase
 " hide search highlight on ,<space>
 nnoremap <silent><leader><space> :nohlsearch<cr>
 
-" map nerdtree to ,f
-noremap <silent><leader>f :NERDTreeToggle<cr>
+" fuzzy-finder mappings
+noremap <silent><leader>f :FufFile<cr>
+noremap <silent><leader>b :FufBuffer<cr>
+noremap <silent><leader>cd :FufDir<cr>
+
+" fuzzy-finder features to explore :
+" - file coverage
+" - mru file
+" - mru command
+" - bookmark file
+" - bookmark dir
+" - tag mode
+" - buffer tag mode
+" - tagged file 
+" - jump list
+" - change list 
+" - quickfix 
+" - line 
 
 " fugitive mapped to ,g*
 noremap <silent><leader>gs :Gstatus<cr>
