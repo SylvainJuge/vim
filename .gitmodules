@@ -21,3 +21,6 @@
 	path = .vim/bundle/l9
 	url = https://github.com/git-mirror/vim-l9.git
 	ignore = dirty
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
