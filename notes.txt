@@ -179,3 +179,11 @@ Ctrl+r : insert value of a register into command line
 
 -- Auto-Completion --
 Ctrl+d : list names that match the pattern in front of the cursor
+
+=== Tags ===
+
+vim -t bidule : open vim on matching "bidule" tag
+
+Ctrl+] : jump to tag definition
+Ctrl+w ] : open tag definition in a new window
+Ctrl+w } : open tag definition in preview window
