@@ -78,8 +78,9 @@ endif
 
 " windows fullscreen toggle
 if has('gui_win32')
-    let s:fullscreenDllPath=expand("%:p:h").'/.vim/bundles/gvimfullscreen_win32/gvimfullscreen.dll'
-    execute "map <F11> <Esc>:call libcallnr('".s:fullscreenDllPath."', 'ToggleFullScreen', 0)<cr>"
+    " note : .dll extention MUST be ommited when using an absolute path
+    let g:fullscreenDllPath=expand('%:p:h').'\.vim\bundle\gvimfullscreen_win32\gvimfullscreen'
+    execute "map <F11> <Esc>:call libcallnr('".g:fullscreenDllPath."', 'ToggleFullScreen', 0)<cr>"
 endif
 
 " remove gui icons bar
