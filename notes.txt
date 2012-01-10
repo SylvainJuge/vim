@@ -57,6 +57,10 @@ TODO multiple configurations
         - using a local file that .vimrc uses to detect which parameters should be used
 
 TODO full screen display, for windows and Linux
+    -> linux : use F11 with gnome
+    -> windows : requires extra files & setup
+        http://www.vim.org/scripts/script.php?script_id=2596
+        -> work in progress, still needs to be tested on windows
 
 TODO : see how to add highlight of end of change area
 TODO : set "shell" option to select which shell is used when calling commands from vim

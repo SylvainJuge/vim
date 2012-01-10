@@ -7,7 +7,6 @@ call pathogen#infect()
 " required to get help on stuff installed through pathogen
 call pathogen#helptags()
 
-
 " set language for messages and gui menus
 let s:langCode = has('win32') ? 'en' : 'en_US.UTF-8'
 
@@ -75,6 +74,12 @@ if has("gui_gtk2")
 elseif has("gui_win32")
     " TODO : find appropriate font for windows xp
     set guifont=Consolas:h11
+endif
+
+" windows fullscreen toggle
+if has('gui_win32')
+    let s:fullscreenDllPath=expand("%:p:h").'/.vim/bundles/gvimfullscreen_win32/gvimfullscreen.dll'
+    execute "map <F11> <Esc>:call libcallnr('".s:fullscreenDllPath."', 'ToggleFullScreen', 0)<cr>"
 endif
 
 " remove gui icons bar
