@@ -27,8 +27,10 @@ TODO : create a mapping to execute d[o|p] + move to next change for quick
 TODO : custom keyboard mappings
     create a map that shows all possibilities (should be a nice graph/visu project)
 
-TODO : find/create a plugin that enable to have per-project configurations
+TODO : find/create a plugin that enable to have per-project and per-environment configurations
     http://stackoverflow.com/questions/456792/vim-apply-settings-on-files-in-directory
+        - using a local file that .vimrc uses to detect which parameters should be used
+        -> there is a plugin that creates .localvimrc configurations files
 
 TODO : search how to use buffers batch operations (bufdo)
 
@@ -46,23 +48,13 @@ TODO text formatting
     right center and left commands 
     look at fmt command line tool
 
-TODO truncate long lines
+TODO truncate long lines & how to display which lines are truncated
     wrapmargin
 
 TODO open search in right window instead of top half window
     this mapping does open a new in a separate tab : "noremap <F1> :tabnew<CR>:help<CR><C-W>o"
     issue: must reuse current help window if already available 
 
-TODO multiple configurations
-        - using a local file that .vimrc uses to detect which parameters should be used
-
-TODO full screen display, for windows and Linux
-    -> linux : use F11 with gnome
-    -> windows : requires extra files & setup
-        http://www.vim.org/scripts/script.php?script_id=2596
-        -> work in progress, still needs to be tested on windows
-
-TODO : see how to add highlight of end of change area
 TODO : set "shell" option to select which shell is used when calling commands from vim
 
 === Spell Check ===
