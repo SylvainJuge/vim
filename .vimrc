@@ -180,3 +180,6 @@ nnoremap <silent><leader>du :diffupdate<cr>
 " ack integration
 " TODO add suitable configuration for windows
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+" localvimrc to handle per location/project settings
+let g:localvimrc_ask=0

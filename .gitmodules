@@ -27,3 +27,6 @@
 [submodule ".vim/bundle/gvimfullscreen_win32"]
 	path = .vim/bundle/gvimfullscreen_win32
 	url = https://github.com/derekmcloughlin/gvimfullscreen_win32.git
+[submodule ".vim/bundle/localvimrc"]
+	path = .vim/bundle/localvimrc
+	url = https://github.com/vim-scripts/localvimrc.git
