@@ -30,3 +30,7 @@
 [submodule ".vim/bundle/localvimrc"]
 	path = .vim/bundle/localvimrc
 	url = https://github.com/vim-scripts/localvimrc.git
+[submodule ".vim/bundle/matchit"]
+	path = .vim/bundle/matchit
+	url = https://github.com/tsaleh/vim-matchit.git
+	ignore = dirty
