@@ -131,6 +131,7 @@ nnoremap <silent><leader><space> :nohlsearch<cr>
 noremap <silent><leader>f :FufFile<cr>
 noremap <silent><leader>b :FufBuffer<cr>
 noremap <silent><leader>cd :FufDir<cr>
+noremap <silent><leader>t :FufTag<cr>
 
 " fuzzy-finder features to explore :
 " - file coverage

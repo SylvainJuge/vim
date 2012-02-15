@@ -181,5 +181,15 @@ Ctrl+d : list names that match the pattern in front of the cursor
 vim -t bidule : open vim on matching "bidule" tag
 
 Ctrl+] : jump to tag definition
+Ctrl+t : return from tag jump
 Ctrl+w ] : open tag definition in a new window
 Ctrl+w } : open tag definition in preview window
+
+g] : displays and select tag occurences
+Ctrl+w g] : displays and select tag occurences in a new window
+
+TODO : create convenient mappings for :tnext :tprev to navigate tag occurences
+
+== Preview Window ==
+
+Ctrl+w z : close any preview window (in current tab)
