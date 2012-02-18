@@ -193,3 +193,21 @@ TODO : create convenient mappings for :tnext :tprev to navigate tag occurences
 == Preview Window ==
 
 Ctrl+w z : close any preview window (in current tab)
+
+=== Text Objects ===
+
+examples:
+cip : change inner paragraph
+das : delete whole sentence
+
+text objects :
+- p : paragraph
+- s : sentence
+- t : xml tag
+- " : between double quotes
+- ' : between single quotes
+- ) : between parentheses, also works with (
+- } : between curly braces, also works with {
+- ] : between square braces, also works with [
+- > : xml opening tag, also works with <, useful to edit tag and its attributes
+
