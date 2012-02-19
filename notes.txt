@@ -48,8 +48,10 @@ TODO text formatting
     right center and left commands 
     look at fmt command line tool
 
-TODO truncate long lines & how to display which lines are truncated
-    wrapmargin
+TODO truncate long lines when typing 
+    wrapmargin : right margin, inserts an <CR> when closer than n characters from left border
+    ???? : hard margin (can't exceed)
+           soft margin (shows what is extra)
 
 TODO open search in right window instead of top half window
     this mapping does open a new in a separate tab : "noremap <F1> :tabnew<CR>:help<CR><C-W>o"
