@@ -79,7 +79,8 @@ endif
 " windows fullscreen toggle
 if has('gui_win32')
     " note : .dll extention MUST be ommited when using an absolute path
-    let g:fullscreenDllPath=expand('%:p:h').'\.vim\bundle\gvimfullscreen_win32\gvimfullscreen'
+    " but that's according to documentation, and does not work without
+    let g:fullscreenDllPath=expand('%:p:h').'\.vim\bundle\gvimfullscreen_win32\gvimfullscreen.dll'
     execute "map <F11> <Esc>:call libcallnr('".g:fullscreenDllPath."', 'ToggleFullScreen', 0)<cr>"
 endif
 
